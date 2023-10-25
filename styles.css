@@ -1,0 +1,177 @@
+.gradient-custom {
+  /* fallback for old browsers */
+  background: #0b22be;
+
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(to right, rgb(27, 35, 255), rgba(37, 117, 252, 0.9));
+
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(to right, rgb(79, 4, 4), rgb(0, 1, 51));
+}
+.title{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.parallax {
+    /* The image used */
+    background-image: url("images/mostafa-mahmoudi-47jO5Y8nsYo-unsplash.jpg");
+
+    /* Set a specific height */
+    min-height: 100vh;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    vertical-align: center;
+    justify-content: center;
+    align-content: center;
+}
+.typing::before {
+    content: '';
+    position: relative;
+    top: 0;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: #4FC3F7;
+    animation: cursorBlink 0.8s steps(3) infinite;
+}
+.typing {
+    position: relative;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #3333);
+}
+.typing h2{
+    position: relative;
+    color: #4FC3F7;
+    letter-spacing: 5px;
+    font-size: 2rem;
+    overflow: hidden;
+    margin-bottom: 0;
+    animation: type 15s steps(95) infinite;
+}
+@keyframes type {
+    0%, 100% {width: 0;}
+    30%, 60% {width: 394px;}
+}
+@media(max-width: 330px) {
+    .typing h2 {
+        font-size: 3rem;
+        animation: type 5s steps(10) infinite;
+    }
+    @keyframes type {0%, 100%
+    {
+        width: 0;
+    }
+    30%, 60%
+    {
+        width: 305px;
+    }
+}
+}
+iframe{
+    background-color: #010517;
+    border-radius: 25px;
+    border-width: 10px;
+    border-color: #010517;
+    border-style: solid;
+}
+.form-control::placeholder{
+    color: whitesmoke;
+}
+div.send_message {
+    border: 1px solid #222227;
+    border-radius: 12px;
+    padding: 20px 20px 0 20px;
+    height: 360px;
+}
+h2.send_message {
+    text-align: center
+}
+p.CV, h2.contact{
+    text-align: center;
+}
+h2.contact{
+    padding-top: 25px;
+}
+.form-control{
+    width: 100%;
+    margin-bottom: 25px;
+    font-size: 16px;
+    line-height: 1;
+    color: white;
+    background-color: #222227;
+    background-clip: padding-box;
+    border: 1px solid #222227;
+    border-radius: 12px;
+    transition: border-color .15s ease-in-out,
+    box-shadow .15s ease-in-out;
+    height: 50px;
+}
+.form-control:focus{
+    background-color: transparent;
+    color: white;
+}
+textarea.form-control{
+    height: 100px;
+}
+.btn.btn-style2{
+    background: linear-gradient(to left, transparent 50%, white 50%)
+    right bottom;
+    background-size: 200% 100%;
+    padding: 0 15px 0 15px;
+    border: 1px solid #fff;
+    border-radius: 50px;
+    font-size: 15px;
+    letter-spacing: -.025em;
+    line-height: 43px;
+    height: 45px;
+    transition: all .3s cubic-bezier(.4,0,.2,1);
+    -webkit-transition: .3s cubic-bezier(.4,0,.2,1);
+    min-width: 150px;
+    position: relative;
+}
+.btn.btn-style2:before{
+    content: "";
+    position: absolute;
+    top: -3px;
+    left: 10%;
+    background-color: whitesmoke;
+    width: 1%;
+    height: 1px;
+    transition:all 0.3s ease 0s;
+}
+.btn.btn-style2:after{
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    right: 10%;
+    background-color: whitesmoke;
+    width: 1%;
+    height: 1px;
+    transition:all 0.3s ease 0s;
+}
+.btn:hover:before, .btn:hover:after, .btn.active:before, .btn.active:after{
+    width: 80%;
+}
+.btn.btn-style2:hover{
+    background-position: left bottom;
+}
+.text:hover{
+    color: #222227;
+    background-position: right bottom;
+    font-weight: bold;
+}
+.text{
+    text-align: center;
+    font-size: 16px;
+    line-height: 30px;
+    color: white;
+    transition: all .6s ease-out;
+    display: block;
+    background-position: left bottom;
+}
+
